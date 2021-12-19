@@ -1,0 +1,70 @@
+html, body {
+    /* Background image was found via Bing as free to modify, share, and use commercially. */
+    background: url('/img/background_image.jfif');
+    background-repeat: no-repeat;
+    background-size: auto;
+    scroll-behavior: smooth;
+    background-color: rgba(29, 68, 47, 0.678);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.homeButton, .projectButton, .aboutButton, .contactButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 25px;
+    color: white;
+    position: relative;
+    top: 260px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#buttons {
+    background-color: rgba(0, 0, 0, 0.349);
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+    padding: none;
+    margin: none;
+    border-radius: 0px;
+    box-sizing: inherit;
+    top: 0;
+    left: 0;
+}
+
+#projectsTitle {
+    position: relative;
+
+}
+
+#homeTitle {
+    position: relative;
+
+}
+
+#aboutTitle {
+    position: relative;
+    
+}
+
+.title {
+    text-shadow: 2px 2px grey;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 80px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
