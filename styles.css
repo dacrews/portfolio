@@ -1,17 +1,19 @@
 html, body {
     /* Background image was found via Bing as free to modify, share, and use commercially. */
-    background: url('/img/background_image.jfif');
+    background: url('/img/background_image.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     scroll-behavior: smooth;
-    background-color: rgba(29, 68, 47, 0.678);
+    background-color: rgba(4, 97, 85, 0.678);
+    margin: 0 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-.homeButton, .projectButton, .aboutButton, .contactButton {
+.homeButton, .projectButton, .aboutButton, .contactButton, #submitButton {
     background: none;
     border: none;
     font-size: 20px;
@@ -31,36 +33,21 @@ body::-webkit-scrollbar {
     position: fixed;
     text-align: center;
     z-index: 999;
-    padding: none;
-    margin: none;
     border-radius: 0px;
     box-sizing: inherit;
     top: 0;
     left: 0;
-}
-
-#projectsTitle {
-    position: relative;
-
-}
-
-#homeTitle {
-    position: relative;
-
-}
-
-#aboutTitle {
-    position: relative;
-    
+    float: left;
 }
 
 .title {
-    text-shadow: 2px 2px grey;
+    text-shadow: 3px 3px grey;
     font-weight: bold;
     color: white;
     text-align: center;
     width: 100%;
     font-size: 80px;
+    height: 100%;
 }
 
 a {
@@ -68,3 +55,115 @@ a {
     text-decoration: none;
 }
 
+section {
+    height: 1010px;
+}
+
+#table {
+    padding-left: 200px;
+    font-size: 25px;
+    text-shadow: none;
+    width: 1500px;
+    height: auto;
+    text-align: left;
+    padding-top: 30px;
+}
+
+#homeTitle {
+    padding-top: 350px;
+    padding-bottom: -400px !important;
+}
+
+#contactContainer {
+    width: 1000px;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.349);
+    margin-left: 515px;
+    margin-top: 60px;
+    border-radius: 25px;
+    position: relative;
+    bottom: 30px;
+}
+
+#contactContent p {
+    position: absolute;
+    text-shadow: none;
+    font-size: 30px;
+    width: 475px;
+    height: 770px;
+    background-color: rgba(136, 136, 136, 0.548);
+    border-radius: 25px 0px 0px 25px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+#contactInput {
+    height: 770px;
+    width: 400px;
+    left: 545px;
+    position: absolute;
+}
+
+#submitButton {
+    font-size: 30px;
+    top: 20px;
+}
+
+#contentPara {
+    padding: 15px;
+}
+
+#contactName, #contactEmail, #subject, #contactMessage {
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#contactLogos {
+    z-index: 1000;
+    padding-top: 300px;
+    position: absolute;
+    left: 100px;
+}
+
+#contactMessage {
+    height: 250px;
+}
+
+textarea {
+    top: 50px;
+    position: relative;
+}
+
+.tableImage {
+    height: 400px;
+    width: 700px;
+    border-radius: 5px;
+}
+
+th:hover {
+    background-color: rgba(136, 136, 136, 0.548);
+    transition: 1s;
+}
+
+#aboutTitle {
+    margin-top: 425px;
+}
+
+.fa-window-restore {
+    padding: 0px 15px 0px 5px;
+}
+
+th {
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+td {
+    border-radius: 0px 10px 10px 0px;
+}

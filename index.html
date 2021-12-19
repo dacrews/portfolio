@@ -15,48 +15,94 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <section class="title" id="homeTitle">
+    <section class="container">
+        <div class="title" id="homeTitle">
             Damaris Crews
-            <p style="font-size: 25px;">Full-Stack Software Engineer specializing in GIS Development</p>
-        </section>
-    </div>
+            <p style="font-size: 25px;">Full-Stack Software Developer with an interest in GIS Development</p>
+        </div>
+    </section>
 
     <div id="buttons">
         <button class="homeButton"><i class="fas fa-home fa-lg"></i><a href="#top"> Home </a></button><br>
         <button class="projectButton"><i class="fas fa-book-open fa-lg"></i><a href="#projectsTitle"> Projects </a></button><br>
-        <button class="aboutButton"><i class="fas fa-info-circle fa-lg"></i> About </button><br>
-        <button class="contactButton"><i class="fas fa-comments fa-lg"></i> Contact </button>
+        <button class="aboutButton"><i class="fas fa-info-circle fa-lg"></i><a href="#aboutTitle"> About </a></button><br>
+        <button class="contactButton" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i class="fas fa-comments fa-lg"></i><a href="#contactTitle"> Contact </a></button><br>
     </div>
 
-    <div class="container">
-        <section class="title" id="projectsTitle">
+    <section class="container">
+        <div class="title" id="projectsTitle">
             Projects
-            <!-- <table>
-                <tr>
-                <th>Name:</th>
-                <td>Bill Gates</td>
-                </tr>
-                <tr>
-                <th>Telephone:</th>
-                <td>555 77 854</td>
-                </tr>
-                <tr>
-                <th>Telephone:</th>
-                <td>555 77 855</td>
-                </tr>
-            </table> -->
-        </section> 
-    </div>
+            <div id="table">
+                <table>
+                    <tr id="project">
+                    <th>
+                        Disc Golf Weather App:<br>
+                        <br>An application that allows a user to see the current weather at selected disc golf courses.<br>
+                        <br>Technologies Used: <br>HTML, CSS, JavaScript, Leaflet<br>
+                        <br><i class="far fa-window-restore"></i><a target="_blank" href="https://github.com/dacrews/discgolfweather/tree/main/Disc%20Golf%20Weather"><i class="fab fa-github"></i></a>
+                    </th>
+                    <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
+                    </tr>
+                    <tr id="project">
+                    <th>
+                        Project 2<br>
+                        <br>Yadda yadda yadda<br>
+                        <br>Technologies Used: <br>Yadda yadda yadda<br>
+                        <br><i class="far fa-window-restore"></i><i class="fab fa-github"></i>
+                    </th>
+                    <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
+                    </tr>
+                    <tr id="project">
+                    <th>
+                        Project 3<br>
+                        <br>Yadda yadda yadda<br>
+                        <br>Technologies Used: <br>Yadda yadda yadda<br>
+                        <br><i class="far fa-window-restore"></i><i class="fab fa-github"></i>
+                    </th>
+                    <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+    </section>
 
-    <div class="container">
-        <section class="title" id="aboutTitle">
+    <section class="container">
+        <div class="title" id="aboutTitle">
             About
-        </section>
-    </div>
+            <div id="aboutContent">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="title" id="contactTitle">
+            Contact
+            <div id="contactContainer">
+                <div id="contactContent"> 
+                    <p id="contentPara">Thanks for checking out my portfolio!
+                    <br><br>
+                    To contact me, feel free to click one of the icons below or send me a message using the contact form to the right!</p>
+                    <div id="contactLogos">
+                        <!-- linkedin with logo -->
+                        <a target="_blank" href="https://www.linkedin.com/in/damariscrews"><i class="fab fa-linkedin"></i></a>
+                        <!-- github with logo -->
+                        <a target="_blank" href="https://github.com/dacrews"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div id="contactInput">
+                    <input type="text" id="contactName" placeholder="Name"></input><br>
+                    <input type="email" id="contactEmail" placeholder="Email"></input><br>
+                    <input type="text" id="subject" placeholder="Subject"></input><br>
+                    <textarea id="contactMessage" placeholder="Message"></textarea><br>
+                    <button id="submitButton"><i class="fas fa-paper-plane fa-lg"></i><br>Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>
-
+        
     </script>
 </body>
 </html>
