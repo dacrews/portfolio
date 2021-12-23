@@ -15,94 +15,141 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="container">
-        <div class="title" id="homeTitle">
-            Damaris Crews
-            <p style="font-size: 25px;">Full-Stack Software Developer with an interest in GIS Development</p>
-        </div>
-    </section>
-
-    <div id="buttons">
-        <button class="homeButton"><i class="fas fa-home fa-lg"></i><a href="#top"> Home </a></button><br>
-        <button class="projectButton"><i class="fas fa-book-open fa-lg"></i><a href="#projectsTitle"> Projects </a></button><br>
-        <button class="aboutButton"><i class="fas fa-info-circle fa-lg"></i><a href="#aboutTitle"> About </a></button><br>
-        <button class="contactButton" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i class="fas fa-comments fa-lg"></i><a href="#contactTitle"> Contact </a></button><br>
+    <div class="title" id="homeTitle">
+        Damaris Crews
+        <p style="font-size: 25px;">Full-Stack Software Developer with an interest in GIS Development</p>
     </div>
 
-    <section class="container">
-        <div class="title" id="projectsTitle">
-            Projects
-            <div id="table">
-                <table>
-                    <tr id="project">
-                    <th>
-                        Disc Golf Weather App:<br>
-                        <br>An application that allows a user to see the current weather at selected disc golf courses.<br>
-                        <br>Technologies Used: <br>HTML, CSS, JavaScript, Leaflet<br>
-                        <br><i class="far fa-window-restore"></i><a target="_blank" href="https://github.com/dacrews/discgolfweather/tree/main/Disc%20Golf%20Weather"><i class="fab fa-github"></i></a>
-                    </th>
-                    <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
-                    </tr>
-                    <tr id="project">
-                    <th>
-                        Project 2<br>
-                        <br>Yadda yadda yadda<br>
-                        <br>Technologies Used: <br>Yadda yadda yadda<br>
-                        <br><i class="far fa-window-restore"></i><i class="fab fa-github"></i>
-                    </th>
-                    <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
-                    </tr>
-                    <tr id="project">
-                    <th>
-                        Project 3<br>
-                        <br>Yadda yadda yadda<br>
-                        <br>Technologies Used: <br>Yadda yadda yadda<br>
-                        <br><i class="far fa-window-restore"></i><i class="fab fa-github"></i>
-                    </th>
-                    <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
-                    </tr>
-                </table>
+
+    <div class="buttons">
+        <button id="homeButton"><i class="fas fa-home fa-lg"></i> Home </button>
+        <button id="projectButton"><i class="fas fa-book-open fa-lg"></i> Projects </button>
+        <button id="aboutButton"><i class="fas fa-info-circle fa-lg"></i> About </button>
+        <button id="contactButton" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i class="fas fa-comments fa-lg"></i> Contact </button>
+    </div>
+
+    
+    <div class="title" id="projectsTitle" style="display: none;">
+        Projects
+        <div id="projectContainer">
+            <div class="project">
+                <p id="project1">
+                    Disc Golf Weather App:<br>
+                    <br>An application that allows a user to see the current weather at selected disc golf courses.<br>
+                    <br>Technologies Used: <br>HTML, CSS, JavaScript, Leaflet<br>
+                    <br><i class="far fa-window-restore"></i><a target="_blank" href="https://github.com/dacrews/discgolfweather/tree/main/Disc%20Golf%20Weather"><i class="fab fa-github"></i></a>
+                </p>
             </div>
-        </div> 
-    </section>
+            <div class="project">
+                <p id="project2">
+                    Project 2<br>
+                    <br>Yadda yadda yadda<br>
+                    <br>Technologies Used: <br>Yadda yadda yadda<br>
+                    <br><i class="far fa-window-restore"></i><i class="fab fa-github"></i>
+                </p>
+            </div>
+            
+        </div>
+        <!-- <div id="table">
+            <table>
+                <tr id="project">
+                <th>
+                    Disc Golf Weather App:<br>
+                    <br>An application that allows a user to see the current weather at selected disc golf courses.<br>
+                    <br>Technologies Used: <br>HTML, CSS, JavaScript, Leaflet<br>
+                    <br><i class="far fa-window-restore"></i><a target="_blank" href="https://github.com/dacrews/discgolfweather/tree/main/Disc%20Golf%20Weather"><i class="fab fa-github"></i></a>
+                </th>
+                <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
+                </tr>
+                <tr id="project">
+                <th>
+                    Project 2<br>
+                    <br>Yadda yadda yadda<br>
+                    <br>Technologies Used: <br>Yadda yadda yadda<br>
+                    <br><i class="far fa-window-restore"></i><i class="fab fa-github"></i>
+                </th>
+                <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
+                </tr>
+                <tr id="project">
+                <th>
+                    Project 3<br>
+                    <br>Yadda yadda yadda<br>
+                    <br>Technologies Used: <br>Yadda yadda yadda<br>
+                    <br><i class="far fa-window-restore"></i><i class="fab fa-github"></i>
+                </th>
+                <td><img class="tableImage" src="/img/DGW_1.png"></img></td>
+                </tr>
+            </table>
+        </div> -->
+    </div> 
 
-    <section class="container">
-        <div class="title" id="aboutTitle">
-            About
-            <div id="aboutContent">
+    <div class="title" id="aboutTitle" style="display: none;">
+        About
+        <div id="aboutContent">
+            <p id="aboutPara">
 
+            </p>
+        </div>
+    </div>
+
+    <div class="title" id="contactTitle" style="display: none;">
+        Contact
+        <div id="contactContainer">
+            <div id="contactContent"> 
+                <p id="contentPara">Thanks for viewing my portfolio!
+                <br><br>
+                To contact me, feel free to click one of the icons below or send me a message using the contact form to the right!</p>
+                <div id="contactLogos">
+                    <!-- linkedin with logo -->
+                    <a target="_blank" href="https://www.linkedin.com/in/damariscrews"><i class="fab fa-linkedin"></i></a>
+                    <!-- github with logo -->
+                    <a target="_blank" href="https://github.com/dacrews"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div id="contactInput">
+                <input type="text" id="contactName" placeholder="Name"></input><br>
+                <input type="email" id="contactEmail" placeholder="Email"></input><br>
+                <input type="text" id="subject" placeholder="Subject"></input><br>
+                <textarea id="contactMessage" placeholder="Message"></textarea><br>
+                <button id="submitButton"><i class="fas fa-paper-plane fa-lg"></i><br>Submit</button>
             </div>
         </div>
-    </section>
-
-    <section class="container">
-        <div class="title" id="contactTitle">
-            Contact
-            <div id="contactContainer">
-                <div id="contactContent"> 
-                    <p id="contentPara">Thanks for checking out my portfolio!
-                    <br><br>
-                    To contact me, feel free to click one of the icons below or send me a message using the contact form to the right!</p>
-                    <div id="contactLogos">
-                        <!-- linkedin with logo -->
-                        <a target="_blank" href="https://www.linkedin.com/in/damariscrews"><i class="fab fa-linkedin"></i></a>
-                        <!-- github with logo -->
-                        <a target="_blank" href="https://github.com/dacrews"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div id="contactInput">
-                    <input type="text" id="contactName" placeholder="Name"></input><br>
-                    <input type="email" id="contactEmail" placeholder="Email"></input><br>
-                    <input type="text" id="subject" placeholder="Subject"></input><br>
-                    <textarea id="contactMessage" placeholder="Message"></textarea><br>
-                    <button id="submitButton"><i class="fas fa-paper-plane fa-lg"></i><br>Submit</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <script>
-        
+        // Variables
+        let home = document.getElementById("homeTitle");
+        let project = document.getElementById("projectsTitle");
+        let about = document.getElementById("aboutTitle");
+        let contact = document.getElementById("contactTitle");
+
+        $("#homeButton").click(function(){
+            home.style.display = "block";
+            project.style.display = "none";
+            about.style.display = "none";
+            contact.style.display = "none";
+        });
+
+        $("#projectButton").click(function(){
+            $("#projectsTitle").slideDown();
+            home.style.display = "none";
+            about.style.display = "none";
+            contact.style.display = "none";
+        });
+
+        $("aboutButton").click(function(){
+            $("aboutTitle").slideDown();
+            home.style.display = "none";
+            project.style.display = "none";
+            contact.style.display = "none";
+        })
+
+        $("#contactButton").click(function(){
+            $("#contactTitle").slideDown();
+            home.style.display = "none";
+            project.style.display = "none";
+            about.style.display = "none";
+        });
     </script>
 </body>
 </html>
